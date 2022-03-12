@@ -1,0 +1,107 @@
+.product{
+    &__title {
+        @include font(32px,34px, 700);
+        text-align: center;
+        text-transform: uppercase;
+        margin: 80px auto 50px auto;
+        color: $blacklight;
+    }
+
+    &__items {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;        
+    }
+
+    &__item {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;               
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 7px;
+        height: 230px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: $yellow;
+        position: relative;
+        box-shadow: 0 2px 25px 1px $bluelighter;        
+        transition-duration: 0.5s;  
+    }
+
+    &__item:hover &__img {        
+        background-size: 105%;
+        transition-duration: 0.5s; 
+    }
+
+    &__img_iron {
+        background-image: url('../img/main/prod_iron.jpg');
+    }
+
+    &__img_concrete {
+        background-image: url('../img/main/prod_concrete.jpg');        
+    }
+
+    &__img_gate {
+        background-image: url('../img/main/prod_gate.jpg');
+    }
+
+    &__img_gates {
+        background-image: url('../img/main/prod_gates.jpg');
+    }
+
+    &__img_tent {
+        background-image: url('../img/main/prod_tent.jpg');
+    }
+
+    &__img_canopy {
+        background-image: url('../img/main/prod_canopy.jpg');
+    }
+
+    &__link {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        color: $yellow;
+        @include font(22px, 24px, 700);
+        text-decoration: none;
+        height: 100px;
+        width: 100%;
+        padding: 50px 20px 22px 20px;
+        background-image: linear-gradient(0deg, $bluedarker, transparent);        
+        border-radius: 0 0 7px 7px;
+    }
+
+    &__price {
+        display: block;
+        color: $bluedarker;
+        @include font(22px, 23px, 700);
+        font-family: 'Montserrat', sans-serif, arial;
+        padding: 25px 0;
+    }
+
+    &__btn {
+        display: block;
+        background-color: $yellow;
+        border-radius: 25px;
+        min-width: 50%;
+        border: none;
+        padding: 10px 20px;        
+        color: $black;
+        @include font(14px, 186x, 700);
+        text-transform: uppercase;
+        margin: 0 0 60px 0;
+        transition-duration: 0.3s;
+    }
+
+    &__btn:hover {
+        background-color: $yellowdark;
+        transition-duration: 0.3s;
+    }
+
+}

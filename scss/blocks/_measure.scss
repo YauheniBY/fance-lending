@@ -1,0 +1,185 @@
+.measure {
+    background-color: $blue;
+    background-image: linear-gradient(45deg, $blue-transparent, $bluedark-transparent), url('../img/backgrounds/measure.jpg');
+    background-size: auto, cover;
+
+    &__intro {
+        width: 51%;        
+        color: $white;
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__h3 {
+        @include font(32px, 26px, 700);
+        font-family: 'Monserrat', sans-serif, arial;
+        padding: 60px 0 30px 0;
+    }
+
+    &__text {        
+        @include font(18px, 28px, 400);
+    }
+
+    &__text_highlighted {
+        text-transform: uppercase;
+        color: $yellow;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif, arial;
+    }
+    
+    &__parts {
+        @include flex-center;
+    }
+
+    &__privilege {
+        width: 40%;
+        // display: inline-block;
+        // margin: 0 0 0 auto;
+    }
+
+    &__privilege-h5 {        
+        @include font(23px, 28px, 400);        
+        color: $white;
+        display: block;
+        margin: 0 auto;
+        padding: 30px 30px 10px 30px;
+        text-align: center;
+    }
+
+    &__privilege-img {
+        max-width: 60px;
+        padding: 0 0 15px 0
+    }
+
+    &__privilege-item {
+        background-color: $white;
+        width: 145px;
+        height: 160px;
+        text-align: center;
+        padding: 15px 10px;
+        border-radius: 6px;
+        margin: 12px;
+    }    
+
+    &__privilege-items {
+        @include flex-center;
+        flex-wrap: wrap;
+        margin: 0 0 40px 0;
+    }
+
+    &__privilege-desc {
+        line-height: 25px;
+    }
+
+    &__action {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    &__form {
+        background-color: $white;
+        border-radius: 10px;
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: 0 10% 0 auto;
+        padding: 30px 5px;
+    }
+
+    &__form-h4 {
+        @include font(27px, 28px, 700);
+        display: block;
+        width: 90%;
+        margin: 0 auto 15px auto;
+    }
+
+    &__form-text {        
+        @include font(14px, 20px, 400);
+        display: block;
+        width: 65%;
+        margin: 0 auto 25px auto;
+    }    
+
+    &__form-phone {
+        width: 80%;
+        border-radius: 25px;
+        padding: 10px 8px;
+        @include font(16px, 18px, 400);
+        color: $black;
+        text-align: center;
+        border: 1px solid $grey;                      
+        margin: 0 auto 25px auto;
+        text-transform: uppercase;
+    }
+
+    &__form-phone:focus-visible {
+        outline: none;
+    }
+
+    &__form-btn {
+        display: block;
+        width: 80%;                      
+        margin: 0 auto 30px auto;
+        background: $yellow;
+        border: none;
+        padding: 12px 10px;
+        border-radius: 25px;
+        @include font(16px, 17px, 700);
+        text-transform: uppercase;
+        color: $black;        
+        transition: 0.3s;
+    }
+
+    &__form-btn:hover {
+        background: $yellowdark;
+        transition: 0.3s;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__policy-label {
+        position: relative;
+        width: 90%;
+        margin: 0 0 0 35px;        
+        color: $blacklight;
+    }
+
+    &__policy-label:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 6px;
+        left: -20px;
+        border: 1px solid $greydark;
+        border-radius: 3px;
+        
+    }
+
+    &__checkbox:checked+&__policy-label:after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 2px;
+        left: -19px;
+        background-image: url('../img/icons/mark.png');
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        z-index: 1;
+    }
+
+    &__extra {
+        color: $white;
+        display: inline-block;
+        max-width: 350px;
+        padding: 20px 0 0 0 ;
+        @include font(14px, 15px);
+    }
+}

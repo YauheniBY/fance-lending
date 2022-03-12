@@ -1,0 +1,127 @@
+.header {
+
+    &__box {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        max-width: 30%;
+
+    }
+
+    &__logo-pictures-part {        
+        max-width: 45%;
+               
+
+    }
+
+    &__logo-img {
+        max-width: 90%;
+        display: block;
+        border-right: 1px solid $bluelight;
+        padding-right: 10%;
+    }
+
+    &__logo-title-part {
+        width: 55%;
+        display: flex;
+        justify-content: start; 
+
+
+    }
+
+    &__page-title {        
+        @include font(16px, 20px, 400px);
+        color: $blue;               
+        text-decoration: none;
+    }
+
+    &__contacts{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-end;
+        margin: 20px 0 30px 0;
+        flex-basis: 610px;
+    }
+
+    &__phone {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__phone-img {
+        display: block;
+        max-width: 42px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        margin-right: 15px;
+        padding: 6px;
+    }
+
+    &__sity {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    &__sity-name {
+        @include font(14px, 19px)
+    }
+
+    &__phone-number {
+        @include font (24px, 28px, 900);
+        font-family: 'Montserrat', sans-serif;
+        color: $blue;
+        text-decoration: none;
+        display: block;
+    }
+
+    &__btns {
+        @include flex-center;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        background-color: $yellow;
+        border-radius: 25px;
+        padding: 9px 25px;
+        @include font (14px, 17px, 700);
+        text-transform: uppercase;
+        color: $black;
+        border: none;
+        min-width: 180px;
+    }
+
+    &__btn:hover {
+        background-color: $yellowdark;
+    }
+
+    &__navigation {
+        background-color: $blue;
+    }
+
+    &__nav-links {
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    &__nav-link {
+        color: $white;
+        @include font(16px, 16px, 700);
+        margin-right: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+}
