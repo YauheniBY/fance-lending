@@ -386,6 +386,7 @@ body {
 
 .offer__form-button:hover {
   background: #ffc601;
+  cursor: pointer;
 }
 
 .offer__extra-filds {
@@ -577,6 +578,7 @@ body {
 .product__btn:hover {
   background-color: #ffc601;
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .measure {
@@ -742,6 +744,7 @@ body {
 .measure__form-btn:hover {
   background: #ffc601;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .measure__checkbox {
@@ -788,4 +791,407 @@ body {
   line-height: 15px;
   font-weight: 400;
   font-style: normal;
+}
+
+.materials {
+  margin: 100px 0 0 0;
+}
+
+.materials__title {
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.materials__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto 80px auto;
+}
+
+.materials__item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.materials__img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 0 auto 30px auto;
+}
+
+.materials__name {
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 700;
+  font-style: normal;
+  height: 25px;
+  margin: 0 auto 45px auto;
+  text-transform: uppercase;
+}
+
+.materials__divide-line {
+  display: block;
+  height: 3px;
+  width: 110px;
+  background-color: #f24841;
+  margin: 0 auto 35px auto;
+}
+
+.materials__price {
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto 25px auto;
+  color: #2c2c2c;
+}
+
+.materials__btn {
+  background-color: #ffe400;
+  padding: 10px 12px;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.materials__btn:hover {
+  background-color: #ffc601;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.installation {
+  background-color: #faf9f9;
+}
+
+.installation__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 0 80px 0;
+}
+
+.installation__ilustration {
+  width: 30%;
+}
+
+.installation__img {
+  width: 100%;
+  display: block;
+}
+
+.installation__info {
+  width: 25%;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.installation__title {
+  font-size: 25px;
+  line-height: 26px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 0 auto 40px auto;
+}
+
+.installation__desc {
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto 50px auto;
+}
+
+.installation__offer-mini {
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 auto 50px auto;
+}
+
+.installation__offer-big {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 900;
+  font-style: normal;
+  margin: 0 auto 0px auto;
+  font-family: 'Montserrat', arial, sans-serif;
+}
+
+.installation__form {
+  width: 35%;
+  background-color: #293a4f;
+  background: linear-gradient(135deg, #293a4f, #293a4ff0);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 30px;
+  text-align: center;
+}
+
+.installation__form-name {
+  font-size: 26px;
+  line-height: 27px;
+  font-weight: 900;
+  font-style: normal;
+  margin: 0 0 30px 0;
+}
+
+.installation__form-desc {
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 0 30px 0;
+}
+
+.installation__form-phone {
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px 8px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  text-align: center;
+  border: none;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+}
+
+.installation__form-phone:focus-visible {
+  outline: none;
+}
+
+.installation__form-btn {
+  display: block;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  background: #ffe400;
+  border: none;
+  padding: 12px 10px;
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.installation__form-btn:hover {
+  background: #ffc601;
+  cursor: pointer;
+}
+
+.installation__checkbox {
+  display: none;
+}
+
+.installation__policy-label {
+  position: relative;
+  width: 100%;
+  margin: 0 0 0 35px;
+}
+
+.installation__policy-label:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  border: 1px solid #6c6c6b;
+  border-radius: 3px;
+}
+
+.installation__checkbox:checked + .installation__policy-label:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: -19px;
+  background-image: url("../img/icons/mark.png");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  z-index: 1;
+}
+
+.show {
+  background-color: #def6fe;
+  color: #2c2c2c;
+  padding: 80px 10px;
+}
+
+.show__h3 {
+  font-size: 28px;
+  line-height: 29px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.show__box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 0 100px 0;
+}
+
+.show__imgs {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.show__imgs-big {
+  width: 100%;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+
+.show__img-big {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.show__imgs-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.show__imgs-item {
+  margin: 0 auto;
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.show__link:hover::after {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.show__link::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background: rgba(5, 6, 44, 0.7) url(../img/icons/loupe.svg) center no-repeat;
+  background-size: 100% 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.show__img-mini {
+  width: 100%;
+  display: block;
+}
+
+.show__info {
+  width: 50%;
+  display: block;
+}
+
+.show__h4 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0 0 30px 0;
+}
+
+.show__text {
+  margin: 0 0 10px 0;
+}
+
+.show__desc {
+  font-weight: 700;
+}
+
+.show__work-items {
+  margin: 40px 0 25px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.show__work-item {
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show__work-img-item {
+  width: 50%;
+}
+
+.show__work-img {
+  width: 50%;
+  display: inline-block;
+}
+
+.show__work-name, .show__work-price {
+  font-weight: 700;
+}
+
+.show__btn {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+  background: #ffe400;
+  border: none;
+  padding: 16px 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.show__btn:hover {
+  background: #ffc601;
+  cursor: pointer;
 }

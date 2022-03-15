@@ -1,0 +1,141 @@
+.installation {
+    background-color: $greylight;
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 80px 0 80px 0;
+    }
+
+    &__ilustration {
+        width: 30%;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__info {
+        width: 25%;
+        text-align: center;
+        color: $blacklight;
+    }
+
+    &__title {
+        @include font(25px, 26px, 700);
+        text-transform: uppercase;
+        margin: 0 auto 40px auto;
+    }
+
+    &__desc {
+        @include font(18px, 19px, 400);
+        margin: 0 auto 50px auto;
+    }
+
+    &__offer-mini {
+        @include font(18px, 19px, 700);
+        margin: 0 auto 50px auto;
+    }
+    
+    &__offer-big {
+        @include font(24px, 26px, 900);
+        margin: 0 auto 0px auto;
+        font-family: 'Montserrat', arial, sans-serif;
+    }
+
+    &__form {
+        width: 35%;
+        background-color: $blue;
+        background: linear-gradient(135deg, $blue, $blue-transparent);
+        color: $white;
+        border-radius: 10px;
+        padding: 30px 30px;
+        text-align: center;
+    }
+
+    &__form-name {
+        @include font(26px, 27px, 900);
+        margin: 0 0 30px 0;
+    }
+
+    &__form-desc {
+        @include font(16px, 17px, 400);
+        margin: 0 0 30px 0;
+    }
+
+    &__form-phone {
+        width: 100%;
+        border-radius: 25px;
+        padding: 10px 8px;
+        @include font(16px, 18px, 400);
+        color: $black;
+        text-align: center;
+        border: none;                      
+        margin: 0 0 30px 0;
+        text-transform: uppercase;
+    }
+
+    &__form-phone:focus-visible {
+        outline: none;
+    }
+
+    &__form-btn {
+        display: block;
+        width: 100%;
+        margin: 0 auto 30px auto;
+        background: $yellow;
+        border: none;
+        padding: 12px 10px;
+        border-radius: 25px;
+        @include font(16px, 17px, 700);
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    &__form-btn:hover {
+        background: $yellowdark;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__policy-label {
+        position: relative;
+        width: 100%;
+        margin: 0 0 0 35px;
+    }
+
+    &__policy-label:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 6px;
+        left: -20px;
+        border: 1px solid $greydark;
+        border-radius: 3px;
+    }
+
+    &__checkbox:checked+&__policy-label:after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 2px;
+        left: -19px;
+        background-image: url('../img/icons/mark.png');
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        z-index: 1;
+    }
+
+
+
+
+
+}

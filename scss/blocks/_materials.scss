@@ -1,0 +1,71 @@
+.materials{
+    margin: 100px 0 0 0;
+
+    &__title{
+        @include font(32px, 34px, 700);
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    &__items{
+        @include flex-center;
+        margin: 80px auto 80px auto;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+    &__img {
+        width: 50%;
+        border-radius: 50%;
+        margin: 0 auto 30px auto;
+    }
+
+    &__name {
+        @include font(19px, 20px, 700);
+        height: 25px;
+        margin: 0 auto 45px auto;
+        text-transform: uppercase;
+    }
+
+    &__divide-line {
+        display: block;
+        height: 3px;
+        width: 110px;
+        background-color: $redlight;
+        margin: 0 auto 35px auto;
+    }
+
+    &__price {        
+        @include font(18px, 19px, 400);
+        margin: 0 auto 25px auto;
+        color: $blacklight;
+    }
+
+    &__btn {
+        background-color: $yellow;
+        padding: 10px 12px;
+        border-radius: 20px;
+        transition: 0.3s;
+        @include font(16px, 17px, 700);
+        text-transform: uppercase;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    &__btn:hover {
+        background-color: $yellowdark;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+
+}
+
