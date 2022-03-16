@@ -1,0 +1,91 @@
+.infoback {
+    background: url(../img/backgrounds/mobile.jpg);
+    height: 480px;
+    position: relative;
+
+    &__box {
+        width: 680px;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 200px;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        width: 330px;
+        height: 500px;
+        background: url(../img/icons/messenger.png) no-repeat;
+        background-size: 100%;
+        z-index: 2;
+        background-position: bottom;
+    }
+
+    &__block {
+        width: 550px;
+        height: 400px;
+        background-color: $blue;
+        background: linear-gradient(to right,rgba(20,30,48,0.9) 0%,rgba(36,59,85,0.9) 100%);
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 20px 130px;
+        margin: 0 auto 30px auto;
+        position: absolute;
+        bottom: 0;
+        right: 0%;
+        z-index: 1;
+        border-radius: 20px;
+    }
+
+    &__title {
+        @include font(32px, 32px, 900);
+        font-family: 'Montserrat', arial, sans-serif;
+        text-transform: uppercase;        
+    }
+
+    &__name {
+        @include font(28px, 28px, 700);
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+
+    &__color-text {
+        color: $yellow;
+        padding: 0 0 0 130px;
+        display: block;
+        position: relative;
+        @include font(18px, 18px, 400);
+        text-transform: uppercase;
+        margin: 0 0 40px 0;
+    }
+
+    &__color-text::before {
+        content: '';
+        background: url(../img/icons/mark_color.svg) no-repeat;
+        background-size: 100%;
+        width: 60px;
+        height: 60px;
+        display: block;
+        margin: 0 20px 0 0;
+        position: absolute;
+        top: 0;
+        left: 65px;
+    }
+
+    &__link {
+        @include font(27px, 27px, 900);        
+        font-family: 'Montserrat', arial, sans-serif;
+        text-decoration: none;
+        color: $white;
+        margin: 0 0 0 67px;
+
+    }
+
+
+
+
+}

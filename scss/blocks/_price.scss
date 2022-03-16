@@ -1,0 +1,106 @@
+.price {
+   padding: 100px 0;
+   color: $blacklight;
+   
+   &__h3{
+       @include font(30px, 31px, 700);
+       margin: 0 0 50px 0;
+       text-align: center;
+
+   }
+
+   &__switchs {
+    @include flex-center;
+    width: 70%;
+    margin: 0 auto 50px auto;
+    }
+
+    &__switch-btn {
+        display: block;
+        width: 33%;
+        max-width: 300px;
+        margin: 0 10px;
+        border: none;
+        padding: 14px 12px;
+        border-radius: 25px;
+        @include font(14px, 14px, 700);
+        text-transform: uppercase;
+        color: $greydark;
+        border: 2px solid $greydark;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__switch-btn_active {
+        background: $yellow;        
+        color: $black;
+        border: $yellow;        
+        background: $yellow;
+    }
+
+   &__items {
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: space-between;
+       align-items: center;
+       text-align: center;
+       width: 100%;
+       color: $bluedarker;
+   }
+
+   &__item{
+       width: 30%;
+   }
+
+   &__name {
+       @include font(19px, 19px, 900);
+       text-transform: uppercase;
+       margin: 0 0 25px 0;       
+       font-family: 'Montserrat', sans-serif;
+   }
+
+   
+   &__params {
+    text-align: left;
+    margin: 0 0 25px 50px;
+   }
+
+   &__param {
+       margin: 0 0 10px 0;
+   }
+
+   &__number {
+       font-weight: 700;
+   }
+
+   &__img {
+       width: 100%;
+       max-width: 320px;       
+       margin: 0 0 20px 0;
+   }
+
+   &__value {
+        @include font(20px, 21px, 700);
+        margin: 0 0 30px 0;
+        font-family: 'Montserrat', sans-serif;
+   }
+
+
+   &__btn {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    background: $yellow;
+    border: none;
+    padding: 16px 12px;
+    border-radius: 25px;
+    @include font(14px, 14px, 700);
+    text-transform: uppercase;
+    color: $black;
+   }
+
+   &__btn:hover {
+    background: $yellowdark;
+    cursor: pointer;
+    }
+}

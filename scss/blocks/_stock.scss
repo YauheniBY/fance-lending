@@ -1,0 +1,84 @@
+.stock {
+    background: linear-gradient(45deg, $blue-transparent, $bluedark-transparent), url(../img/backgrounds/measure-1.jpg);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: center;
+    color: $white;    
+    @include font(18px, 18px, 400);
+    padding: 70px 10px 50px 10px;
+
+
+   &__title {
+       @include font(30px, 30px, 700);
+       margin: 0 0 50px 0;
+       text-align: center;
+
+   }
+
+   &__items {
+       @include flex-center;
+       text-align: center;
+       width: 70%;
+       max-width: 800px;
+       margin: 0 auto;     
+   }
+
+   &__item {
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 0 0 30px 0;
+
+   }
+
+   &__name {
+        @include font(22px, 22px, 700);
+        color: $yellow;
+        margin: 0 0 10px 0;
+   }
+   &__desc {
+    margin: 0 0 25px 0;
+   }
+
+   &__img {
+       width: 90%;
+       border-radius: 10px;
+       margin: 0 0 40px 0;
+   }
+
+   &__old-price {
+        margin: 0 0 10px 0;
+   }
+
+   &__new {       
+        @include font(23px, 23px, 400);
+        margin: 0 0 20px 0;
+   }
+
+   &__new-price {
+       color: $yellow;
+       font-weight: 700;      
+   }
+
+   &__btn {
+    display: block;
+    width: 85%;
+    max-width: 250px;
+    margin: 0 auto;
+    background: $yellow;
+    border: none;
+    padding: 16px 12px;
+    border-radius: 25px;
+    @include font(14px, 14px, 700);
+    text-transform: uppercase;
+    color: $black;
+   }
+
+   &__btn:hover {
+    background: $yellowdark;
+    cursor: pointer;
+    }
+
+
+}
