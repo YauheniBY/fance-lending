@@ -1,0 +1,102 @@
+.quest {
+    background: url('../img/backgrounds/quest.jpg');
+    padding: 100px 0;
+    color: $white;
+    text-align: center;
+
+    &__form {
+        width: 400px;
+        margin: 0 auto;        
+    }
+
+    &__name {
+        @include font (31px, 31px, 700);
+        margin: 0 0 30px;        
+    }
+
+    &__desc {
+        @include font (16px, 16px, 400);
+        margin: 0 0 30px;        
+    }
+
+    &__message {
+        width: 90%;
+        margin: 0 0 25px 0;
+        border-radius: 25px; 
+        padding: 20px 14px;
+        outline: none; 
+        border: none;         
+        @include font (17px, 17px, 700);
+        text-align: center;
+        font-family: 'PT Sans', sans-serif, arial;
+        text-transform: uppercase;    
+    }
+
+    &__phone {
+        width: 90%;
+        margin: 0 0 25px 0;
+        border-radius: 25px;
+        padding: 16px 14px;
+        @include font (17px, 17px, 700);
+        text-transform: uppercase;        
+        font-family: 'PT Sans', sans-serif, arial;
+        text-align: center;        
+        outline: none;
+        border: none;      
+    }
+
+    &__message:hover, &__phone:hover {
+        outline: none;
+    }
+
+    &__btn {
+        background-color: $yellow;
+        border-radius: 25px;
+        padding: 15px 25px;
+        @include font (15px, 17px, 700);
+        text-transform: uppercase;
+        color: $black;
+        border: none;
+        width: 90%;
+        min-width: 280px;
+        margin: 0 0 30px;     
+    }
+
+    &__btn:hover {
+        background-color: $yellowdark;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__policy-label {
+        position: relative;
+        width: 100%;
+        margin: 0 0 0 35px;
+    }
+
+    &__policy-label:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 6px;
+        left: -20px;
+        border: 1px solid $greydark;
+        border-radius: 3px;
+    }
+
+    &__checkbox:checked+&__policy-label:after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 2px;
+        left: -19px;
+        background-image: url('../img/icons/mark.png');
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,68 @@
+.stages {
+    background-color: $greymiddle;
+    padding: 100px 0;
+    color: $blacklight;
+
+    &__title {
+        @include font(30px, 30px, 700);
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-items: center;
+        align-items: flex-start;     
+    }
+
+    &__item {
+        width: 33.333%;
+        max-width: 360px;
+        margin: 0 auto 60px auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__img {
+        width: 70%;
+        max-width: 160px;
+        display: block;
+        margin: 0 auto 30px auto;
+        border-radius: 50%;
+    }
+    
+    &__num {
+        @include font(24px, 24px, 700);
+        margin: 0 0 5px 0;
+    }
+    
+    &__name {
+        @include font(24px, 24px, 700);
+        margin: 0 0 5px 0;
+        text-transform: uppercase;
+        color: $redlight;
+
+    }
+
+    &__info {
+        @include font(22px, 22px, 400);
+        margin: 0 0 15px 0;
+        color: $blue;
+    }
+
+    &__desc {
+        @include font(16px, 16px, 400);
+        margin: 0 0 5px 0;
+    }
+
+    &__link {
+        @include font(16px, 16px, 400);
+        margin: 0 0 5px 0;
+        color: $blacklight;
+        text-decoration: none;
+    }
+
+}

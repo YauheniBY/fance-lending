@@ -1,0 +1,57 @@
+.colors {
+    padding: 100px 0px;
+
+    &__title {
+        color: $blacklight;
+        @include font(30px, 30px, 700);
+        font-family: 'Montserrat', arial, sans-serif;
+        text-align: center;
+        margin: 0 0 50px 0;
+    }
+
+    &__items {
+        @include flex-center;
+        max-width: 750px;
+        margin: 0 auto 50px auto;
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    &__img {
+        width: 80%;
+        max-width: 100px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 35px auto;
+    }
+
+    &__desc {
+        @include font(17px, 17px, 400);
+        text-align: center;
+    }
+
+    &__btn {
+        display: block;
+        width: 85%;
+        max-width: 350px;
+        margin: 0 auto;
+        background: $yellow;
+        border: none;
+        padding: 16px 12px;
+        border-radius: 25px;
+        @include font(14px, 14px, 700);
+        text-transform: uppercase;
+        color: $black;
+       }
+    
+       &__btn:hover {
+        background: $yellowdark;
+        cursor: pointer;
+        }
+    
+}
