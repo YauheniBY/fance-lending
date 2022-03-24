@@ -40,7 +40,7 @@
     }
 
     &__img_iron {
-        background-image: url('../img/main/prod_iron.jpg');
+        background-image: url('../img/main/prod_profnastil.jpg');
     }
 
     &__img_concrete {
@@ -48,12 +48,20 @@
     }
 
     &__img_gate {
+        background-image: url('../img/main/prod_gate-1.jpg');
+    }
+    &__img_gate-concrete {
         background-image: url('../img/main/prod_gate.jpg');
     }
 
     &__img_gates {
+        background-image: url('../img/main/prod_gates-2.jpg');
+    }
+
+    &__img_gates-concrete {
         background-image: url('../img/main/prod_gates.jpg');
     }
+
 
     &__img_tent {
         background-image: url('../img/main/prod_tent.jpg');

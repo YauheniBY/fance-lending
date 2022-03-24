@@ -1,0 +1,136 @@
+.footer {
+    background: $bluefooters;
+    padding: 50px 0;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: $white;
+    }
+
+    &__info {
+        width: 28%;
+    }
+
+    &__h4 {
+        @include font (19px, 19px, 700);
+        text-transform: uppercase;
+        margin: 0 0 40px 0;       
+    }
+
+    &__text {
+        @include font (15px, 20px, 400);
+        text-transform: uppercase; 
+        margin: 0 0 20px 0;             
+    }
+
+    &__copyright {
+        @include font (14px, 14px, 400);
+        text-transform: uppercase; 
+    }
+
+    &__links {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 33%;
+    }
+
+    &__item {
+        margin: 0;
+        list-style: none;
+    }
+
+    &__link {
+        @include font (16px, 16px, 700);
+        text-transform: uppercase;
+        color: $white;
+        margin: 0 0 8px 0;
+        text-decoration: none;
+        display: block;
+    }
+
+    &__link:hover {
+        cursor: pointer;
+        color: $yellow;        
+    }
+
+    &__about {
+        width: 30%;
+    }
+
+    &__desc {
+        max-width: 80%;
+        display: block;        
+        @include font (16px, 20px, 400);
+        text-transform: uppercase;
+        text-align: right;
+        margin: 0 0 40px auto;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-end;
+        margin: 20px 0 30px 0;
+        flex-basis: 610px;
+    }
+
+    &__phone {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__phone-img {
+        display: block;
+        max-width: 42px;
+        border-radius: 50%;
+        border: 2px solid $white;
+        margin-right: 15px;
+        padding: 6px;
+    }
+
+    &__sity {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    &__sity-name {
+        @include font(14px, 19px)
+    }
+
+    &__phone-number {
+        @include font (22px, 28px, 900);
+        font-family: 'Montserrat', sans-serif;
+        color: $white;
+        text-decoration: none;
+        display: block;
+    }
+
+    &__btns {
+        @include flex-center;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        background-color: $yellow;
+        border-radius: 25px;
+        padding: 9px 15px;
+        @include font (14px, 17px, 700);
+        text-transform: uppercase;
+        color: $black;
+        border: none;
+        min-width: 180px;
+    }
+
+    &__btn:hover {
+        background-color: $yellowdark;
+    }
+}

@@ -1,0 +1,74 @@
+.hat {
+    background: $white;
+    padding: 10px 0;
+    box-shadow: 0 0 10px $bluelighter;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    transition: all .3s;
+
+    &__active {
+        opacity: 1;
+        transition: all .3s;        
+        z-index: 999;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;        
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    &__btn {
+        background-color: $yellow;
+        border-radius: 25px;
+        padding: 9px 15px;
+        @include font (14px, 17px, 700);
+        text-transform: uppercase;
+        color: $black;
+        border: none;
+        min-width: 180px;
+        margin:  0 20px 0 0;
+        text-align: center;
+    }
+
+    &__btn:hover {
+        background-color: $yellowdark;
+        cursor: pointer;
+    }
+
+    &__calls {
+        @include flex-center;
+    }
+
+    &__img {
+        display: block;
+        max-width: 35px;
+        border-radius: 50%;
+        border: 2px solid $blue;
+        margin-right: 15px;
+        padding: 4px;
+    }
+
+    &__link {
+        @include font (23px, 28px, 900);
+        font-family: 'Montserrat', sans-serif;
+        color: $blue;
+        text-decoration: none;
+        display: block;
+    }
+
+
+
+}

@@ -38,15 +38,19 @@
         background: $yellow;
     }
 
-   &__items {
-       display: flex;
-       flex-flow: row wrap;
-       justify-content: space-between;
-       align-items: center;
-       text-align: center;
-       width: 100%;
-       color: $bluedarker;
-   }
+    &__items {
+        display: none;
+    }
+
+    &__items_active {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        color: $bluedarker;
+    }
 
    &__item{
        width: 30%;
