@@ -3,6 +3,20 @@
        display: flex;
        justify-content: space-between;
        align-items: center;
+
+       @include tablet {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @include mobile {
+            position: relative;
+            top: 60px;
+            left: 0;
+            width: 100%;            
+            padding: 0 0 60px 0;
+        }
+
     }
 
     &__sense {
@@ -11,14 +25,37 @@
         align-items: start;
         max-width: 50%;
         justify-content: space-around;
-        margin: 80px 0;     
+        margin: 80px 0;
+
+        @include tablet {
+            max-width: 60%;
+            margin: 40px 0 10px 0;
+        }
+        
+        @include mobile {
+            max-width: 100%;
+            margin: 30px 0 10px 0;
+        }
     }
 
     &__h1 {
         @include font(44px, 58px, 700);
         color: $white;
         margin: 0 0 50px 0;
-        font-family: 'Montserrat',sans-serif,arial;       
+        font-family: 'Montserrat',sans-serif,arial;
+
+        @include tablet {
+            @include font(35px, 37px, 700);
+            margin: 0 0 25px 0;
+        }
+        
+        @include mobile {
+            @include font(23px, 25px, 700);
+            text-align: center;
+            margin: 0 0 15px 0;
+            width: 100%;
+            max-width: 470px;
+        }
 
     }
     &__text {
@@ -28,6 +65,17 @@
         padding: 8px 37px;
         @include font(18px, 19px, 700);
         margin: 0 0 100px 0;
+
+        @include tablet {
+            margin: 0 auto 30px auto;
+        }
+
+        @include mobile {
+            padding: 8px;
+            @include font(16px, 16px, 700);            
+            margin: 0 auto 15px auto;
+            width: 100%;
+        }
     }
 
     &__items {
@@ -35,6 +83,14 @@
         flex-flow: row;
         width: 100%;
         justify-content: space-between;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+         }
     }
 
     &__item {
@@ -42,6 +98,11 @@
         flex-flow: column;
         align-items: center;
         margin-right: 60px;
+
+        @include desktop {
+            margin-right: 5px;
+        }
+
     }
 
     &__img {
@@ -67,7 +128,22 @@
         display: flex;
         flex-direction: column;
         background-image: linear-gradient(to right,rgba(20,30,48,0.9) 0%,rgba(36,59,85,0.9) 100%);
-        border-radius: 10px;        
+        border-radius: 10px;
+
+        @include desktop {
+            width: 45%;
+        }
+
+        @include tablet {
+            width: 60%;
+            max-width: 470px;
+            text-align: start;
+        }
+        
+        @include mobile {
+            width: 100%;
+            margin: 0 0 30px 0;
+         }
     }
 
     &__order-form {        
@@ -76,12 +152,27 @@
         align-items: center;
         padding: 50px 30px 30px 30px;       
         color: $white;
+
+        @include mobile {
+            width: 100%;
+            margin: 0 auto;           
+            padding: 30px 10px; 
+         }
     }
 
     &__order-name {
         @include font(20px, 23px, 400);       
         color: $white;
         margin: 0 0 30px 0;
+
+        @include tablet {
+            text-align: center;            
+            margin: 0 0 17px 0;
+        }
+
+        @include mobile {
+            @include font(16px, 23px, 400); 
+        }
     }
 
     &__form-text_highlighted {
@@ -89,6 +180,10 @@
         text-transform: uppercase;
         @include font(21px, 23px, 900);
         font-family: 'Monserrat',sans-serif,arial;
+
+        @include mobile {
+            @include font(16px, 23px, 700); 
+        }
     }
 
     &__form-text_highlighted-dark {
@@ -102,15 +197,27 @@
         display: flex;
         flex-direction: row; 
         margin: 0 0 30px 0;
+
+        @include mobile {
+            margin: 0 0 10px 0;
+         }
     }
 
     &__form-num {
         @include font(30px, 32px, 700);
-        margin: 0 15px 0 0;    
+        margin: 0 15px 0 0;
+        
+        @include mobile {
+            @include font(23px, 23px, 700);
+         }
     }
 
     &__form-text {
         @include font(16px, 18px, 400);
+
+        @include mobile {
+            @include font(14px, 14px, 400);
+         }
     }
 
     &__phones-fild {
@@ -163,6 +270,7 @@
         color: $white;
         flex-grow: 1;
         text-align: end;
+        @include font(14px, 15px, 300);
     }
 
     &__extra-fild {
@@ -172,6 +280,11 @@
         padding: 7px 5px;
         text-align: center;
         border: none;
+
+        @include mobile {
+            width: 50%;
+            min-width: 60px; 
+         }
     }
 
     &__extra-fild:focus-visible{
@@ -183,6 +296,10 @@
         border-radius: 0 0 10px 10px;        
         padding: 30px 30px 50px 30px;       
         color: $greydark;
+
+        @include mobile {
+            margin: 20px 10px;
+        }
     }
 
     &__checkbox {
@@ -193,6 +310,11 @@
         position: relative;
         width: 100%;
         margin: 0 0 0 35px;
+
+        @include mobile {
+            @include font(13px, 13px, 400);
+            margin: 0 0 0 25px;
+         }
     }
 
     &__policy-label:before {

@@ -6,19 +6,41 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+
+    @include desktop {
+        margin: 0 40px;
+     }
+
+    @include tablet {
+        margin: 0 20px;
+     }
+
+    @include mobile {
+       margin: 0 10px;
+    }
 }
+
 
 .visually-hidden {
     position: fixed;
     transform: scale(0);
 }
 
+._lock {
+    overflow: hidden;
+}
+
 .concrete {
     background: url(../img/backgrounds/concrete-back-2.jpg);
-    background-size: 100%;
+    background-size: cover;
+
+    @include tablet {
+        background-position: 25%;
+     }
+
 }
 
 .profnastil {
     background: url(../img/backgrounds/profnastil-back-2.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
