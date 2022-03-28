@@ -1,29 +1,45 @@
 .show {
     background-color: $bluebrightnes;
     color: $blacklight;
-    padding: 100px 10px;
+    padding: 100px 10px 20px 10px;    
 
     &__h3 {
         @include font(28px,29px,700);
         text-transform: uppercase;
         margin: 0 auto 60px auto;
-        text-align: center
+        text-align: center;
+
+        @include mobile {
+            font-size: 22px;
+            text-transform: none;
+            margin-bottom: 25px;
+        }
     }
 
     &__box {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;       
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         margin: 0 0 100px 0;
+
+        @include mobile {
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
     }
 
     &__imgs {
         width: 45%;
         display: flex;
         flex-direction: column;
+        margin: 0 0 30px 0;
+
+        @include mobile {
+            width: 100%;
+            max-width: 500px;
+        }
     }
 
     &__imgs-big {
@@ -49,7 +65,7 @@
 
     &__imgs-item {
         margin: 0 auto;
-        width:20%;
+        width:23%;
         position: relative;
         overflow: hidden;                
         border-radius: 5px;
@@ -85,6 +101,11 @@
     &__info {
         width: 50%;
         display: block;
+
+        @include mobile {
+            width: 100%;
+            max-width: 500px;
+        }
     }
 
     &__h4 {
@@ -94,6 +115,11 @@
 
     &__text {
         margin: 0 0 10px 0;
+
+        @include mobile {
+            line-height: 17px;
+            margin: 0;
+        }
     }
 
     &__desc {
@@ -107,25 +133,49 @@
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 10px;
+
+        @include mobile {
+            padding: 10px 20px;
+            width: 100%;
+            flex-direction: column;
+        }
     }
 
     &__work-item {
         width: 30%;        
         list-style: none;
         @include flex-center;
+
+        @include mobile {
+            margin: 5px 0 5px 20px;
+            width: 75%;
+            justify-content: flex-start; 
+        }
     }
 
     &__work-img-item {        
         width: 50%;
+
+        @include mobile {
+            max-width: 100px;
+        }
     }
 
     &__work-img {
         width: 50%;
         display: inline-block;
+
+        @include mobile {
+            max-width: 70px;
+        }
     }
 
     &__work-name, &__work-price {
         font-weight: 700;
+
+        @include mobile {
+            min-width: 100px;
+        }
     }
 
     &__btn {
@@ -139,6 +189,12 @@
         @include font(16px, 17px, 700);
         text-transform: uppercase;
         color: $black;
+        font-family: 'PT Sans';
+
+        @include mobile {
+            font-size: 14px;
+            padding: 10px 12px;
+        }
     }
 
     &__btn:hover {

@@ -4,21 +4,28 @@
    
    &__h3{
        @include font(30px, 31px, 700);
-       margin: 0 0 50px 0;
+       margin: 0 auto 50px auto;
+       max-width: 80%;
        text-align: center;
+
+       @include mobile {
+        @include font(24px, 25px, 700);
+    }
 
    }
 
    &__switchs {
     @include flex-center;
-    width: 70%;
     margin: 0 auto 50px auto;
+
+    @include mobile {
+        flex-wrap: wrap;
+    }
     }
 
     &__switch-btn {
         display: block;
-        width: 33%;
-        max-width: 300px;
+        width: 250px;
         margin: 0 10px;
         border: none;
         padding: 14px 12px;
@@ -29,6 +36,12 @@
         border: 2px solid $greydark;
         text-align: center;
         cursor: pointer;
+
+        @include mobile {
+            flex-wrap: wrap;
+            margin: 10px;
+            @include font(14px, 14px, 700);
+        }
     }
 
     &__switch-btn_active {
@@ -45,15 +58,21 @@
     &__items_active {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: space-around;
         text-align: center;
         width: 100%;
         color: $bluedarker;
+
     }
 
    &__item{
        width: 30%;
+
+       @include mobile {
+        width: 100%;
+        max-width: 310px;
+        margin: 30px auto;
+    }
    }
 
    &__name {
@@ -92,7 +111,7 @@
 
    &__btn {
     display: block;
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
     background: $yellow;
     border: none;
@@ -101,6 +120,11 @@
     @include font(14px, 14px, 700);
     text-transform: uppercase;
     color: $black;
+    max-width: 250px;
+
+    @include mobile {
+        
+    }
    }
 
    &__btn:hover {

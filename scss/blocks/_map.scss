@@ -1,6 +1,10 @@
 .map {
     height: 500px;
     padding: 45px 0;
+
+    @include mobile {
+        display: none;
+    }
     
     &_gomel {
         background: url(../img/backgrounds/map-Gomel.jpg);

@@ -1,6 +1,10 @@
 .reviews {    
     padding: 100px 0 50px 0;
 
+    @include mobile {
+        padding-top: 70px;
+    }
+
     &_back-img {
         background-color: $blue;
         background: url(../img/backgrounds/review.jpg);
@@ -10,17 +14,21 @@
         @include font(33px,33px, 700);
         margin: 0 0 50px;
         text-align: center;
-        color: $white
-    }
+        color: $white;
 
-    &__title_light {
-        color: $white
+        @include mobile {
+            @include font(24px,27px, 700);
+         }
     }
 
     &__items {
         @include flex-center;
         max-width: 950px;  
-        margin: 0 auto 50px auto;      
+        margin: 0 auto 50px auto;
+        
+        @include mobile {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -29,6 +37,15 @@
         width: 20%;
         min-width: 250px;
         margin: 0 auto;
+
+        @include tablet {
+            min-width: 200px;
+        }
+
+        @include mobile {
+            margin: 0 auto 10px auto;
+            min-width: 250px;
+        }
     }
 
     &__link {
@@ -74,9 +91,10 @@
         border: none;
         padding: 16px 14px;
         border-radius: 25px;
-        @include font(15px, 15px, 400);
+        @include font(15px, 15px, 700);
         text-transform: uppercase;
         color: $black;
+        font-family: 'PT Sans';
     }
 
     &__btn:hover {

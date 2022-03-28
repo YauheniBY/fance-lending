@@ -10,16 +10,29 @@
         margin: 0 auto;
         padding: 20px;
         text-align: center;
+
+        @include mobile {
+            width: 100%;
+            max-width: 320px;
+        }
     }
 
     &__h3 {
         @include font(32px, 26px, 700);
         font-family: 'Monserrat', sans-serif, arial;
         padding: 60px 0 30px 0;
+
+        @include mobile {
+            font-size: 24px;
+        }
     }
 
     &__text {        
         @include font(18px, 28px, 400);
+
+        @include mobile {
+            @include font(14px, 14px, 400);
+        }
     }
 
     &__text_highlighted {
@@ -31,12 +44,15 @@
     
     &__parts {
         @include flex-center;
+        flex-wrap: wrap;
     }
 
     &__privilege {
         width: 40%;
-        // display: inline-block;
-        // margin: 0 0 0 auto;
+        @include tablet {
+            width: 100%;
+            max-width: 615px;
+        }
     }
 
     &__privilege-h5 {        
@@ -46,11 +62,12 @@
         margin: 0 auto;
         padding: 30px 30px 10px 30px;
         text-align: center;
-    }
+    }    
 
-    &__privilege-img {
-        max-width: 60px;
-        padding: 0 0 15px 0
+    &__privilege-items {
+        @include flex-center;
+        flex-wrap: wrap;
+        margin: 0 0 40px 0;
     }
 
     &__privilege-item {
@@ -61,12 +78,21 @@
         padding: 15px 10px;
         border-radius: 6px;
         margin: 12px;
-    }    
 
-    &__privilege-items {
-        @include flex-center;
-        flex-wrap: wrap;
-        margin: 0 0 40px 0;
+        @include mobile {
+            margin: 6px;
+        }
+    }
+
+    &__privilege-item_desktop {
+        @include mobile {
+            display: none;
+        }
+    }
+    
+    &__privilege-img {
+        max-width: 60px;
+        padding: 0 0 15px 0
     }
 
     &__privilege-desc {
@@ -77,6 +103,11 @@
         width: 50%;
         display: inline-block;
         text-align: center;
+
+        @include tablet {            
+            width: 100%;
+            max-width: 500px;
+        }
     }
 
     &__form {
@@ -88,6 +119,14 @@
         max-width: 70%;
         margin: 0 10% 0 auto;
         padding: 30px 5px;
+
+        @include tablet {
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            max-width: 100%;
+        }
     }
 
     &__form-h4 {
@@ -102,6 +141,10 @@
         display: block;
         width: 65%;
         margin: 0 auto 25px auto;
+
+        @include mobile {
+            width: 80%;
+        }
     }    
 
     &__form-phone {
@@ -146,9 +189,13 @@
 
     &__policy-label {
         position: relative;
-        width: 90%;
+        width: 85%;
         margin: 0 0 0 35px;        
         color: $blacklight;
+
+        @include mobile {
+            font-size: 12px;
+        }
     }
 
     &__policy-label:before {
@@ -156,8 +203,8 @@
         width: 10px;
         height: 10px;
         position: absolute;
-        top: 6px;
-        left: -20px;
+        top: 3px;
+        left: -10px;
         border: 1px solid $greydark;
         border-radius: 3px;
         
@@ -168,8 +215,8 @@
         width: 16px;
         height: 16px;
         position: absolute;
-        top: 2px;
-        left: -19px;
+        top: 0px;
+        left: -9px;
         background-image: url('../img/icons/mark.png');
         background-repeat: no-repeat;
         background-size: 14px 14px;
@@ -179,8 +226,8 @@
     &__extra {
         color: $white;
         display: inline-block;
-        max-width: 350px;
-        padding: 20px 0 0 0 ;
+        max-width: 350px;        
         @include font(14px, 15px);
+        margin: 25px auto;
     }
 }

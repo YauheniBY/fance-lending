@@ -4,46 +4,82 @@
     &__box {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         padding: 80px 0 80px 0;
+        
+        @include mobile {
+            padding: 40px 10px;
+            margin: 0 auto;
+            max-width: 450px;
+            justify-content: space-around;
+        }
     }
 
     &__ilustration {
         width: 30%;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__img {
         width: 100%;
-        display: block;
+        display: block;        
     }
 
     &__info {
         width: 25%;
         text-align: center;
         color: $blacklight;
+
+        @include mobile {
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
     }
 
     &__title {
         @include font(25px, 26px, 700);
         text-transform: uppercase;
         margin: 0 auto 40px auto;
+
+        @include mobile {
+            font-size: 18px;
+        }
     }
 
     &__desc {
         @include font(18px, 19px, 400);
         margin: 0 auto 50px auto;
+
+        @include mobile {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 
     &__offer-mini {
         @include font(18px, 19px, 700);
         margin: 0 auto 50px auto;
+
+        @include mobile {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
     
     &__offer-big {
         @include font(24px, 26px, 900);
         margin: 0 auto 0px auto;
         font-family: 'Montserrat', arial, sans-serif;
+
+        @include mobile {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
     }
 
     &__form {
@@ -54,16 +90,31 @@
         border-radius: 10px;
         padding: 30px 30px;
         text-align: center;
+
+        @include mobile {
+            width: 100%;
+            max-width: 600px;
+        }
     }
 
     &__form-name {
         @include font(26px, 27px, 900);
         margin: 0 0 30px 0;
+
+        @include mobile {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
     }
 
     &__form-desc {
         @include font(16px, 17px, 400);
         margin: 0 0 30px 0;
+
+        @include mobile {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
     }
 
     &__form-phone {
@@ -76,6 +127,10 @@
         border: none;                      
         margin: 0 0 30px 0;
         text-transform: uppercase;
+
+        @include mobile {
+            margin-bottom: 15px;
+        }
     }
 
     &__form-phone:focus-visible {
@@ -108,6 +163,10 @@
         position: relative;
         width: 100%;
         margin: 0 0 0 35px;
+
+        @include mobile {
+            font-size: 13px;
+        }
     }
 
     &__policy-label:before {

@@ -1,0 +1,91 @@
+.example {
+
+    padding: 40px 0 60px 0;
+    background-color: $greymiddle;
+
+    &__title {
+        @include font(32px,34px, 700);
+        text-align: center;
+        text-transform: uppercase;
+        margin: 80px auto 50px auto;
+        color: $blacklight;
+    }
+
+    &__items {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+        @include desktop {
+            justify-content: space-around;
+        }        
+    }
+
+    &__item {
+        width: 100%;        
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+
+        @include desktop {
+            min-width: 320px;
+        }
+
+        @include mobile {
+            min-width: 310px;
+            margin: 10px;
+        }            
+    }
+    
+
+    &__item_desktop {
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 7px;
+        height: 230px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: $yellow;
+        position: relative;
+        box-shadow: 0 2px 25px 1px $bluelighter;        
+        transition-duration: 0.5s;        
+        background-image: url('../img/iron/iron_example_1.jpg');
+
+        @include desktop {
+            height: 210px;
+        }
+
+        @include mobile {
+            height: 200px;
+        }
+    }
+
+    &__item:hover &__img {        
+        background-size: 105%;
+        transition-duration: 0.5s; 
+    }
+
+    &__name {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        color: $white;
+        @include font(22px, 24px, 700);
+        text-decoration: none;
+        height: 100px;
+        width: 100%;
+        padding: 50px 20px 22px 20px;
+        background-image: linear-gradient(0deg, $bluedarker, transparent);        
+        border-radius: 0 0 7px 7px;
+    }
+}

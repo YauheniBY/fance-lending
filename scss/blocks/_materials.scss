@@ -1,30 +1,59 @@
 .materials{
     margin: 100px 0 0 0;
 
+    @include mobile {
+        margin-top: 70px;
+    }
+
     &__title{
         @include font(32px, 34px, 700);
         text-align: center;
         text-transform: uppercase;
 
+        @include mobile {
+            font-size: 22px;
+        }
+
     }
 
     &__items{
         @include flex-center;
-        margin: 80px auto 80px auto;
+        margin: 80px auto 20px auto;
+        flex-wrap: wrap;
+
+        @include mobile {
+            margin-top: 20px;
+        }
+    }
+
+    &__items-cuple{
+        @include flex-center;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
     
     &__item {
         display: flex;
         flex-direction: column;
-        width: 25%;
+        width: 100%;
+        max-width: 320px;
         justify-content: center;
         text-align: center;
         padding: 10px;
+        margin: 0 0 60px 0;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
     &__img {
         width: 50%;
         border-radius: 50%;
         margin: 0 auto 30px auto;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
 
     &__name {
@@ -32,6 +61,11 @@
         height: 25px;
         margin: 0 auto 45px auto;
         text-transform: uppercase;
+
+        @include mobile {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
     }
 
     &__divide-line {
@@ -40,7 +74,12 @@
         width: 110px;
         background-color: $redlight;
         margin: 0 auto 35px auto;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
+    
 
     &__price {        
         @include font(18px, 19px, 400);

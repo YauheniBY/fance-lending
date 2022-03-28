@@ -5,19 +5,53 @@
     text-align: center;
     background-size: 100% 100%;
 
+    @include mobile {
+        padding: 70px 0 20px 0;
+    }
+
+
+    &_gomel {
+
+        @include mobile {
+            background: url('../img/backgrounds/map-Gomel.jpg');
+        }
+    }
+
     &__form {
         width: 400px;
-        margin: 0 auto;        
+        margin: 0 auto;
+        
+        @include mobile {
+            width: 70%;
+            min-width: 310px;
+        }
     }
 
     &__name {
         @include font (31px, 31px, 700);
-        margin: 0 0 30px;        
+        margin: 0 0 30px;
+        
+        @include mobile {
+            font-size: 28px;
+            color: $blue;
+        }
     }
 
     &__desc {
         @include font (16px, 16px, 400);
-        margin: 0 0 30px;        
+        margin: 0 0 30px;
+        padding: 5px;       
+        
+        @include mobile {
+            font-weight: 700;
+            color: $blue;
+            max-width: 320px;
+            margin: 0 auto 30px auto;
+            background-color: $white-transparent;
+            border-radius: 5px;
+            max-width: 300px;
+            margin: 0 auto 25px auto;
+        }
     }
 
     &__message {
@@ -30,7 +64,12 @@
         @include font (17px, 17px, 700);
         text-align: center;
         font-family: 'PT Sans', sans-serif, arial;
-        text-transform: uppercase;    
+        text-transform: uppercase;
+        
+        @include mobile {
+            border: 1px solid $blue-transparent;
+            border-radius: 15px;
+        }
     }
 
     &__phone {
@@ -43,7 +82,12 @@
         font-family: 'PT Sans', sans-serif, arial;
         text-align: center;        
         outline: none;
-        border: none;      
+        border: none;
+        
+        @include mobile {
+            border: 1px solid $blue-transparent;
+            border-radius: 15px;
+        }
     }
 
     &__message:hover, &__phone:hover {
@@ -75,6 +119,10 @@
         position: relative;
         width: 100%;
         margin: 0 0 0 35px;
+
+        @include mobile {
+            color: $blue;
+        }
     }
 
     &__policy-label:before {

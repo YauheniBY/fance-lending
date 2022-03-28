@@ -2,7 +2,7 @@
 let btns = document.querySelectorAll('.price__switch-btn'),
     priceItems = document.querySelectorAll('.price__items');
 
-    for(let i = 0; i < (btns.length - 1); i++){
+    for(let i = 0; i < btns.length; i++){
 
         btns[i].addEventListener('click', elem => {
 

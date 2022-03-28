@@ -7,40 +7,91 @@
         justify-content: space-between;
         align-items: flex-start;
         color: $white;
+        flex-wrap: wrap;
+
+        @include tablet {
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto 20px auto;
+        }
     }
 
     &__info {
         width: 28%;
+
+        @include desktop {
+            width: 40%;
+        }
+        @include tablet {
+            width: 90%;
+            margin: 0 auto 20px auto;
+        }
     }
 
     &__h4 {
         @include font (19px, 19px, 700);
         text-transform: uppercase;
-        margin: 0 0 40px 0;       
+        margin: 0 0 40px 0; 
+
+        @include mobile {
+            margin-bottom: 15px;            
+        }
     }
 
     &__text {
         @include font (15px, 20px, 400);
         text-transform: uppercase; 
-        margin: 0 0 20px 0;             
+        margin: 0 0 20px 0; 
+
+        @include mobile {
+            @include font (12px, 15px, 400);            
+        }
     }
 
     &__copyright {
         @include font (14px, 14px, 400);
-        text-transform: uppercase; 
+        text-transform: uppercase;        
+
+        @include mobile {
+            @include font (12px, 15px, 400);            
+        } 
+    }
+    
+    &__about {
+        width: 70%;
+
+        @include desktop {
+            width: 60%;
+        }
+        @include tablet {
+            width: 90%;
+            margin: 0 auto 20px auto;
+        }
     }
 
-    &__links {
+    &__items {
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        flex-flow: column wrap;
+        justify-content: flex-start;
         align-items: flex-start;
-        width: 33%;
+        width: 100%;
     }
 
     &__item {
-        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    &__links {
+        margin: 0 30px 0 0;
         list-style: none;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__link {
@@ -56,18 +107,19 @@
         cursor: pointer;
         color: $yellow;        
     }
-
-    &__about {
-        width: 30%;
-    }
+    
 
     &__desc {
-        max-width: 80%;
+        max-width: 30%;
         display: block;        
         @include font (16px, 20px, 400);
         text-transform: uppercase;
         text-align: right;
         margin: 0 0 40px auto;
+
+        @include desktop {
+            display: none;
+        }
     }
 
     &__contacts {
@@ -75,14 +127,13 @@
         flex-flow: column wrap;
         align-items: flex-end;
         margin: 20px 0 30px 0;
-        flex-basis: 610px;
     }
 
     &__phone {
         display: flex;
         justify-content: end;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 20px;        
     }
 
     &__phone-img {
@@ -92,6 +143,10 @@
         border: 2px solid $white;
         margin-right: 15px;
         padding: 6px;
+
+        @include mobile {
+            max-width: 35px;            
+        }
     }
 
     &__sity {
@@ -110,13 +165,22 @@
         color: $white;
         text-decoration: none;
         display: block;
+
+        @include mobile {
+            @include font (20px, 28px, 900);           
+        }
     }
 
     &__btns {
         @include flex-center;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         width: 100%;
         justify-content: space-between;
+        font-family: 'PT Sans';
+
+        @include mobile {
+            flex-wrap: wrap;            
+        }
     }
 
     &__btn {
@@ -127,7 +191,14 @@
         text-transform: uppercase;
         color: $black;
         border: none;
-        min-width: 180px;
+        min-width: 200px;
+        margin: 0 0 0 10px;
+
+        @include mobile {
+            width: 100%;
+            margin: 0 0 20px 0;
+            padding: 12px 15px;
+        }
     }
 
     &__btn:hover {
