@@ -90,7 +90,7 @@ window.addEventListener('load', function(){
 
             const gotoBlock = document.querySelector(targetLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top 
-                                    + pageXOffset - document.querySelector('.hat').offsetHeight;
+                                    + pageYOffset - 55;
 
             window.scrollTo({ 
                 

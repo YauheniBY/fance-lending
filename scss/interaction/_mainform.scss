@@ -10,6 +10,12 @@
     opacity: 0;
     transition: .2s;
 
+    @include mobile {        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;        
+    }
+
     &__active {        
         z-index: 1000;
         opacity: 1;
@@ -29,6 +35,13 @@
         padding: 30px 10px;
         border-radius: 15px;
         color: $blacklight;
+
+        @include mobile {        
+            position: relative;
+            left: 0;
+            top: 0;
+            margin: 10px auto;
+        }
     }
 
     &__title {

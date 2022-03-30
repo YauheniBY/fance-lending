@@ -44,8 +44,8 @@
             <div class="container">
                 <ul class="header__nav-links">
                     <li><a data-goto=".product" href="#" class="header__nav-link">Продукция</a></li>
-                    <li><a data-goto=".show" href="#" class="header__nav-link">Примеры работ</a></li>
-                    <li><a data-goto=".map" href="#" class="header__nav-link">Радиус выезда</a></li>
+                    <li><a data-goto=".example" href="#" class="header__nav-link">Примеры работ</a></li>
+                    <li><a data-goto=".price" href="#" class="header__nav-link">Примеры стоимости</a></li>
                     <li><a data-goto=".reviews" href="#" class="header__nav-link">Отзывы</a></li>
                 </ul>
             </div>
@@ -84,7 +84,7 @@
                                 <div class="offer__form-text">Оставьте свой номер телефона и наш специалист свяжется с Вами в течение 45 минут</div>
                             </div>
                             <form action="post" class="form">
-                                <input type="phone" placeholder="Ваш телефон" class="offer__phones-fild tel" >
+                                <input type="tel" placeholder="Ваш телефон" class="offer__phones-fild tel" >
                                 <div class="offer__extra-filds">
                                     <label class="offer__extra-label" for="wallslength">Длина, м: <input class="offer__extra-fild" id="wallslength" type="text"  value="" placeholder="15 метров"></label>
                                     <label class="offer__extra-label" for="wallsheight">Высота, м: <input class="offer__extra-fild" id="wallsheight" type="text"  value="" placeholder="2 метра"></label>
@@ -195,7 +195,7 @@
                         <form action="post" class="measure__form">
                             <h4 class="measure__form-h4">Вызовите замерщика</h4>
                             <p class="measure__form-text">Подберём для вас параметры забора и бесплатно посчитаем смету</p>
-                            <input type="text" class="measure__form-phone  tel" placeholder="Ваш телефон">
+                            <input type="tel" class="measure__form-phone  tel" placeholder="Ваш телефон">
                             <button class="measure__form-btn">Вызвать замерщика</button>
                             <input type="checkbox" id="measure__checkbox" class="measure__checkbox" checked="">
                             <label for="measure__checkbox" class="measure__policy-label">Я согласен(-на) с условиями передачи информации</label>
@@ -328,7 +328,7 @@
                         <form action="post">
                             <h3 class="installation__form-name">Форма для заявки на консультацию по вашему будущему забору</h3>
                             <p class="installation__form-desc">Оставьте заявку в этой форме, что бы получить получить консультацию по забору</p>
-                            <input type="text" class="installation__form-phone" placeholder="Ваш телефон" required>
+                            <input type="tel" class="installation__form-phone" placeholder="Ваш телефон" required>
                             <button class="installation__form-btn">Получить консультацию</button>
                             <div class="installation__privacy">
                                 <input type="checkbox" id="installation__checkbox" class="installation__checkbox" checked>
@@ -345,14 +345,14 @@
                 
                 <div class="show__box active">
                     <div class="show__imgs">
-                        <div class="show__imgs-big show__link">
-                            <a class="show__link" href="./img/main/show-27.jpg" target="_blank"><img src="./img/main/show-27.jpg" alt="железобетонный Забор булыжник" class="show__img-big"></a>
+                        <div class="show__imgs-big">
+                            <a class="show__link1" href="./img/main/show-27.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-27.jpg" alt="железобетонный Забор булыжник" class="show__img-big"></a>
                         </div>
                         <div class="show__imgs-items">
-                            <a class="show__imgs-item show__link" href="./img/main/show-26.jpg" target="_blank"><img src="./img/main/show-26.jpg" alt="Забор железобетонный Ажурный верх" class="show__img-mini"></a></li>
-                            <a class="show__imgs-item show__link" href="./img/main/show-30.jpg" target="_blank"><img src="./img/main/show-30.jpg" alt="Забор из бетона сланец в рамке" class="show__img-mini"></a>
-                            <a class="show__imgs-item show__link" href="./img/main/show-28.jpg" target="_blank"><img src="./img/main/show-28.jpg" alt="Забор сборный с бетонными блоками" class="show__img-mini"></a>
-                            <a class="show__imgs-item show__link" href="./img/main/show-29.jpg" target="_blank"><img src="./img/main/show-29.jpg" alt="Еврозабор от завода с крышкой" class="show__img-mini"></a>
+                            <a class="show__imgs-item show__link1" href="./img/main/show-26.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-26.jpg" alt="Забор железобетонный Ажурный верх" class="show__img-mini"></a></li>
+                            <a class="show__imgs-item show__link1" href="./img/main/show-30.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-30.jpg" alt="Забор из бетона сланец в рамке" class="show__img-mini"></a>
+                            <a class="show__imgs-item show__link1" href="./img/main/show-28.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-28.jpg" alt="Забор сборный с бетонными блоками" class="show__img-mini"></a>
+                            <a class="show__imgs-item show__link1" href="./img/main/show-29.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-29.jpg" alt="Еврозабор от завода с крышкой" class="show__img-mini"></a>
                         </div>
                     </div>
                     <div class="show__info">
@@ -403,14 +403,14 @@
                 </div>
                 <div class="show__box active">
                     <div class="show__imgs">
-                        <div class="show__imgs-big show__link">
-                            <a class="show__link" href="./img/main/show-40.jpg" target="_blank"><img src="./img/main/show-40.jpg" alt="Забор железобетонный кирпичик" class="show__img-big"></a>
+                        <div class="show__imgs-big">
+                            <a class="show__link2" href="./img/main/show-40.jpg" data-slider="show__link2" target="_blank"><img src="./img/main/show-40.jpg" alt="Забор железобетонный кирпичик" class="show__img-big"></a>
                         </div>
                         <div class="show__imgs-items">
-                            <a class="show__imgs-item show__link" href="./img/main/show-25.jpg" target="_blank"><img src="./img/main/show-25.jpg" alt="Забор железобетонный без бордюра" class="show__img-mini"></a>
-                            <a class="show__imgs-item show__link" href="./img/main/show-42.jpg" target="_blank"><img src="./img/main/show-42.jpg" alt="Забор железобетонный плитка кирпич" class="show__img-mini"></a>
-                            <a class="show__imgs-item show__link" href="./img/main/show-21.jpg" target="_blank"><img src="./img/main/show-21.jpg" alt="Забор железобетонный в цвет тротуарной плитки" class="show__img-mini"></a>  
-                            <a class="show__imgs-item show__link" href="./img/main/show-41.jpg" target="_blank"><img src="./img/main/show-41.jpg" alt="Забор железобетонный из цемента М-300" class="show__img-mini"></a>                          
+                            <a class="show__imgs-item show__link2" href="./img/main/show-25.jpg" data-slider="show__link2" target="_blank"><img src="./img/main/show-25.jpg" alt="Забор железобетонный без бордюра" class="show__img-mini"></a>
+                            <a class="show__imgs-item show__link2" href="./img/main/show-42.jpg" data-slider="show__link2" target="_blank"><img src="./img/main/show-42.jpg" alt="Забор железобетонный плитка кирпич" class="show__img-mini"></a>
+                            <a class="show__imgs-item show__link2" href="./img/main/show-21.jpg" data-slider="show__link2" target="_blank"><img src="./img/main/show-21.jpg" alt="Забор железобетонный в цвет тротуарной плитки" class="show__img-mini"></a>  
+                            <a class="show__imgs-item show__link2" href="./img/main/show-41.jpg" data-slider="show__link2" target="_blank"><img src="./img/main/show-41.jpg" alt="Забор железобетонный из цемента М-300" class="show__img-mini"></a>                          
                         </div>
                     </div>
                     <div class="show__info">
@@ -747,7 +747,7 @@
                             <p class="colors__desc">Декоративный верх</p>
                         </div>
                     </div>
-                    <button class="colors__btn">Смотреть примеры работ</button>
+                    <button data-goto=".example" class="colors__btn">Смотреть примеры работ</button>
             </div>
         </section>
         <section class="stages">
@@ -804,11 +804,11 @@
             <div class="container">
                 <h4 class="reviews__title reviews__title_light">Отзывы и благодарственные письма</h4>
                 <div class="reviews__items">
-                    <div class="reviews__item"><a href="./img/main/review-1.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-1.jpg" alt="Отзыв 1" class="reviews__img"></a></div>
-                    <div class="reviews__item"><a href="./img/main/review-2.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-2.jpg" alt="Отзыв 2" class="reviews__img"></a></div>
-                    <div class="reviews__item"><a href="./img/main/review-3.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-3.jpg" alt="Отзыв 3" class="reviews__img"></a></div>                    
+                    <div class="reviews__item" data-slider="reviews__link"><a href="./img/main/review-1.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-1.jpg" alt="Отзыв 1" class="reviews__img"></a></div>
+                    <div class="reviews__item" data-slider="reviews__link"><a href="./img/main/review-2.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-2.jpg" alt="Отзыв 2" class="reviews__img"></a></div>
+                    <div class="reviews__item" data-slider="reviews__link"><a href="./img/main/review-3.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-3.jpg" alt="Отзыв 3" class="reviews__img"></a></div>                    
                 </div>
-                <button class="reviews__btn">Смотреть ещё отзывы</button>
+                <button data-goto=".example" class="reviews__btn">Смотреть примеры работ</button>
             </div>
         </section>
         <section class="map map_gomel">
@@ -919,13 +919,19 @@
             <form action="post" class="mainform__box">
                 <h4 class="mainform__title">Заказ обратного звонка</h4>
                 <div class="mainform__desc">Оставьте заявку и наш менеджер произведет точные расчеты для Вашего забора!</div>
-                <input type="text" class="mainform__input  tel" placeholder="Ваш телефон">
+                <input type="tel" class="mainform__input  tel" placeholder="Ваш телефон">
                 <button class="mainform__btn">Заказать расчет</button>
                 <div class="mainform__privacy">
                     <input type="checkbox" class="mainform__checkbox" id="mainform__checkbox" checked>
                     <label for="mainform__checkbox" class="mainform__policy-label">Я согласен(а) с условиями передачи информации</label>
                 </div>
-            </form>
+            </form>            
+        </section>
+        <section class="slider">
+            <img class="slider__img" src="./img/icons/logo.png" alt="show img">
+            <div class="slider__prev">&#10140;</div>
+            <div class="slider__next">&#10140;</div>
+            <div class="slider__cross"></div>
         </section>
         
     </aside> 
@@ -933,6 +939,7 @@
     <script src="./js/mask.js"></script>
     <script src="./js/compairprice.js"></script>
     <script src="./js/isdevice.js"></script>
-    <script src="./js/example.js"></script>    
+    <script src="./js/example.js"></script>
+    <script src="./js/slider.js"></script>    
 </body>
 </html>

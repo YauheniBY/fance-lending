@@ -45,8 +45,8 @@
             <div class="container">
                 <ul class="header__nav-links">
                     <li><a data-goto=".product" href="#" class="header__nav-link">Продукция</a></li>
-                    <li><a data-goto=".show" href="#" class="header__nav-link">Примеры работ</a></li>
-                    <li><a data-goto=".map" href="#" class="header__nav-link">Радиус выезда</a></li>
+                    <li><a data-goto=".example" href="#" class="header__nav-link">Примеры работ</a></li>
+                    <li><a data-goto=".price" href="#" class="header__nav-link">Примеры стоимости</a></li>
                     <li><a data-goto=".reviews" href="#" class="header__nav-link">Отзывы</a></li>
                 </ul>
             </div>
@@ -249,7 +249,7 @@
         </section>
         <section class="example example_iron">
             <div class="container">
-                <h3 class="example__title">Примеры работ</h3>
+                <h3 data-goto=".example" class="example__title">Примеры работ</h3>
                 <div class="example__items">
                     <div class="example__item">
                         <div class="example__img">
@@ -807,7 +807,7 @@
                     <div class="reviews__item"><a href="./img/main/review-2.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-2.jpg" alt="Отзыв 2" class="reviews__img"></a></div>
                     <div class="reviews__item"><a href="./img/main/review-3.jpg" target="_blank" class="reviews__link"><img src="./img/main/review-3.jpg" alt="Отзыв 3" class="reviews__img"></a></div>                    
                 </div>
-                <button class="reviews__btn">Смотреть ещё отзывы</button>
+                <button data-goto=".example" class="reviews__btn">Смотреть ещё отзывы</button>
             </div>
         </section>       
         <section class="map map_gomel">

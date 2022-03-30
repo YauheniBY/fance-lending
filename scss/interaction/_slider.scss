@@ -1,0 +1,91 @@
+.slider {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $blacktransparent;
+    z-index: 1000;
+    display: none;
+
+    &_active{
+        display: flex;
+    }
+
+    &__img {
+        display: block;
+        max-height: 90%;
+        max-width: 60%;
+        
+        @include desktop {
+            max-width:400px;
+        }
+
+        @include mobile {
+            max-width:320px;
+        }
+    }
+
+    &__prev, &__next, &__cross {
+        position: absolute;
+        z-index: 1001;
+        width: 45px;
+        height: 45px;
+        background: $blacktransparent;
+        color: $white;
+        font-size: 35px;
+        padding: 5px;
+        opacity: .5;
+        text-align: center;
+    }
+
+    &__prev {
+        left: 5px;
+        top: 50%;
+        transform: rotate(180deg);
+    }
+
+    &__next {
+        right: 5px;
+        top: 50%;
+    } 
+    
+    &__prev:hover, &__next:hover, &__cross:hover:before {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    &__disactive {
+        opacity: .3;
+    }
+
+    &__disactive:hover {
+        opacity: .3;
+    }
+
+    &__cross {
+        right: 0;
+        top: 0;
+    }
+
+    &__cross::before {
+        content: "\00D7";
+        font-size: 50px;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        position: relative;
+        left: -5px;
+        bottom: 10px;
+    }
+
+    &__cross:hover{
+        color:  $white;
+        opacity: 1;
+        cursor: pointer;
+    }
+}

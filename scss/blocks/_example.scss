@@ -9,6 +9,10 @@
         text-transform: uppercase;
         margin: 80px auto 50px auto;
         color: $blacklight;
+
+        @include mobile {
+            @include font (25px, 25px, 700);
+        }
     }
 
     &__items {
