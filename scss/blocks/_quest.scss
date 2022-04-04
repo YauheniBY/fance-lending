@@ -125,6 +125,19 @@
         }
     }
 
+    &__policy-label_link{
+        color: $white;
+        text-decoration: none;
+
+        @include mobile {
+            color: $blue;
+        }
+    }
+
+    &__policy-label_link:hover {
+        cursor: pointer;
+    }
+
     &__policy-label:before {
         content: '';
         width: 10px;

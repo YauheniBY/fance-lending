@@ -7,6 +7,22 @@ window.addEventListener('load', function(){
         $navigation = document.querySelector('.header__navigation'),
         $body = document.querySelector('body'),
         $insidelinks = document.querySelectorAll('[data-goto]');
+        $checkbocks = document.querySelectorAll('input[type=checkbox]');
+
+        Array.from($checkbocks).forEach(function(element) {
+            console.log(element);
+            console.log(element.checked);
+
+            element.addEventListener('click', function(){
+                if(element.checked) { 
+                    element.setAttribute('checked', true);
+                    console.log(element.checked);
+                } else {
+                    element.removeAttribute('checked');
+                    console.log(element.checked);
+                }
+            });
+        });
 
 //to top-button click
 

@@ -25,9 +25,6 @@ $cross.addEventListener('click', e => {
 
 Array.from($slidersElements).forEach(element => {
 
-    console.log($slidersElements);
-    console.log(element);
-
     element.addEventListener('click', function(link){
 
         link.preventDefault();
@@ -36,12 +33,6 @@ Array.from($slidersElements).forEach(element => {
 
         arr = Array.from(links).filter(elem => elem.dataset.slider == link.target.dataset.slider);
         console.log(arr);
-
-        
-
-            console.log(link.target);
-            console.log("This is link");
-
 
                 $slider.classList.add('slider_active');
 
@@ -52,8 +43,6 @@ Array.from($slidersElements).forEach(element => {
                         return true;
                     }                
                 });
-
-                console.log(currentIndex);
 
                 if(currentIndex == arr.length - 1) {
                     $btnNext.classList.add('slider__disactive');
@@ -69,8 +58,6 @@ Array.from($slidersElements).forEach(element => {
                             }
 
                             currentIndex++;
-                            
-                            console.log(currentIndex);
 
                             $img.src = arr[currentIndex].href;
 
@@ -98,13 +85,14 @@ Array.from($slidersElements).forEach(element => {
                             }
                         }
 
-                    });
-                
+                    });              
 
     });
 
     
 });
+
+// Slider finished
 
 
 

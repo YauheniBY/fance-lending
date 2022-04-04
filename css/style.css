@@ -3361,6 +3361,21 @@ body {
   }
 }
 
+.quest__policy-label_link {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .quest__policy-label_link {
+    color: #293a4f;
+  }
+}
+
+.quest__policy-label_link:hover {
+  cursor: pointer;
+}
+
 .quest__policy-label:before {
   content: '';
   width: 10px;
