@@ -30,6 +30,10 @@ body {
     overflow: hidden;
 }
 
+.error {
+    box-shadow: 0 0 0 2px $redlight;
+}
+
 .concrete {
     background: url(../img/backgrounds/concrete-back-2.jpg);
     background-size: cover;

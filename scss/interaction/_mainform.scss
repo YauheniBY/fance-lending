@@ -123,6 +123,10 @@
         border-radius: 3px;
     }
 
+    &__checkbox.error &__policy-label:before {
+        border-color: $redlight;
+    }
+
     &__checkbox:checked+&__policy-label:after {
         content: '';
         width: 16px;
@@ -134,6 +138,10 @@
         background-repeat: no-repeat;
         background-size: 14px 14px;
         z-index: 1;
+    }
+
+    &__checkbox.error &__policy-label:before {
+        box-shadow: 0 0 0 2px $redlight;
     }
 
 

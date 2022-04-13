@@ -237,6 +237,10 @@
         outline: none;
     }
 
+    &__phones-fild._error {
+            box-shadow: 0 0 2px $redlight;
+    }
+
     &__form-button {
         display: block;
         width: 100%;
@@ -288,6 +292,23 @@
          }
     }
 
+    &__extra-fild::placeholder {
+        color: $bluelight;
+    }
+
+    &__extra-fild:-moz-placeholder {
+        color: $bluelight;
+    }
+
+    &__extra-fild::-moz-placeholder {
+        color: $bluelight;
+    }
+
+    &__extra-fild:-ms-input-placeholder {
+        color: $bluelight;
+    }
+
+
     &__extra-fild:focus-visible{
         outline: none;
     }
@@ -296,7 +317,15 @@
         background-color: $white;
         border-radius: 0 0 10px 10px;        
         padding: 30px 30px 50px 30px;       
-        color: $greydark;        
+        color: $greydark;
+        margin: 30px -30px -30px -30px;
+        
+        @include mobile {
+            width: calc(100% + 20px);
+            margin: 0 auto;           
+            padding: 30px 10px;
+            margin: 30px 0 -30px -10px;
+         }
     }
 
     &__checkbox {

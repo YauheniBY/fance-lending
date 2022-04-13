@@ -83,29 +83,30 @@
                                 <div class="offer__form-num">1.</div>
                                 <div class="offer__form-text">Оставьте свой номер телефона и наш специалист свяжется с Вами в течение 45 минут</div>
                             </div>
-                            <form method="post" class="form" action="./php/mail.php">
-                                <input type="tel" placeholder="Ваш телефон" class="offer__phones-fild tel" name="phone" >
+                            <form class="form" action="#">
+                                <input type="tel" placeholder="Ваш телефон" class="offer__phones-fild tel _req" name="phone" >
                                 <input type="hidden" name="city" value="ГОМЕЛЬ">
                                 <input type="hidden" name="sort" value="Бетонный">
                                 <div class="offer__extra-filds">
                                     <label class="offer__extra-label" for="wallslength">Длина, м: <input class="offer__extra-fild" id="wallslength" type="text"  placeholder="15 метров" name="length"></label>
                                     <label class="offer__extra-label" for="wallsheight">Высота, м: <input class="offer__extra-fild" id="wallsheight" type="text"  placeholder="2 метра" name="height"></label>
-                                    <label class="offer__extra-label" for="gate1">Ворота: <input class="offer__extra-fild" id="gate1" type="text" placeholder="1 шт." name="gates"></label>
-                                    <label class="offer__extra-label" for="gate2">Калитки: <input class="offer__extra-fild" id="gate2" type="text" placeholder="1 шт." name="gate"></label>                                
+                                    <label class="offer__extra-label" for="gate1">Ворота: <input class="offer__extra-fild" id="gate1" type="text" placeholder="0 шт." name="gates"></label>
+                                    <label class="offer__extra-label" for="gate2">Калитки: <input class="offer__extra-fild" id="gate2" type="text" placeholder="0 шт." name="gate"></label>                                
                                 </div>
                                 <button class="offer__form-button submit" type="submit">Получить расчет</button>
-                            </form>                            
-                        </div>
-                        <div class="offer__order-explanation">
-                            <div class="offer__order-desc">
-                                <div class="offer__form-num offer__form-num_dark">2.</div>
-                                <div class="offer__form-text offer__form-text_dark"><span class="offer__form-text_highlighted-dark">Бесплатно</span> к вам приедет инженер и уточнит конструкцию и материал забора</div>
-                            </div>
-                                <div class="offer__policy policy">
-                                    <input id="offer__checkbox" type="checkbox" name="policy" class="offer__checkbox policy__checkbox" checked="">
-                                    <label class="offer__policy-label policy__label" for="offer__checkbox">Я согласен (а) с условиями передачи информации</label>
-                                </div>
+                           
+                                <div class="offer__order-explanation">
+                                    <div class="offer__order-desc">
+                                        <div class="offer__form-num offer__form-num_dark">2.</div>
+                                        <div class="offer__form-text offer__form-text_dark"><span class="offer__form-text_highlighted-dark">Бесплатно</span> к вам приедет инженер и уточнит конструкцию и материал забора</div>
+                                    </div>
+                                        <div class="offer__policy policy">
+                                            <input id="offer__checkbox" type="checkbox" name="policy" class="offer__checkbox policy__checkbox _req" checked="">
+                                            <label class="offer__policy-label policy__label" for="offer__checkbox">Я согласен (а) с условиями передачи информации</label>
+                                        </div>
 
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -194,14 +195,14 @@
                         </div>
                     </div>
                     <div class="measure__action">
-                        <form method="post" class="measure__form" action="./php/mail.php">
+                        <form class="measure__form" action="#">
                             <h4 class="measure__form-h4">Вызовите замерщика</h4>
                             <p class="measure__form-text">Подберём для вас параметры забора и бесплатно посчитаем смету</p>
-                            <input type="tel" class="measure__form-phone  tel" placeholder="Ваш телефон"  name="phone">
+                            <input type="tel" class="measure__form-phone  tel _req" placeholder="Ваш телефон"  name="phone">
                             <input type="hidden" name="city" value="ГОМЕЛЬ">
                             <input type="hidden" name="sort" value="Бетонный">
                             <button class="measure__form-btn">Вызвать замерщика</button>
-                            <input type="checkbox" name="policy" id="measure__checkbox" class="measure__checkbox" checked="">
+                            <input type="checkbox" name="policy" id="measure__checkbox" class="measure__checkbox _req" checked="">
                             <label for="measure__checkbox" class="measure__policy-label">Я согласен(-на) с условиями передачи информации</label>
                         </form>       
                         <p class="measure__extra">Заполнение заявки Вас ни к чему не обязывает.
@@ -329,15 +330,15 @@
                         <p class="installation__offer-big">Бесплатная консультация по вашему забору</p>
                     </div>
                     <div class="installation__form">
-                        <form method="post" action="./php/mail.php">
+                        <form action="#">
                             <h3 class="installation__form-name">Форма для заявки на консультацию по вашему будущему забору</h3>
                             <p class="installation__form-desc">Оставьте заявку в этой форме, что бы получить получить консультацию по забору</p>
-                            <input type="tel" class="installation__form-phone tel" placeholder="Ваш телефон" required  name="phone">
+                            <input type="tel" class="installation__form-phone tel _req" placeholder="Ваш телефон" required  name="phone">
                             <input type="hidden" name="city" value="ГОМЕЛЬ">
                             <input type="hidden" name="sort" value="Бетонный">
                             <button class="installation__form-btn">Получить консультацию</button>
                             <div class="installation__privacy">
-                                <input type="checkbox" name="policy" id="installation__checkbox" class="installation__checkbox" checked>
+                                <input type="checkbox" name="policy" id="installation__checkbox" class="installation__checkbox _req" checked>
                                 <label for="installation__checkbox" class="installation__policy-label">Я согласен(а) с условиями передачи информации</label>
                             </div>
                         </form>                        
@@ -355,7 +356,7 @@
                             <a class="show__link1" href="./img/main/show-27.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-27.jpg" alt="железобетонный Забор булыжник" class="show__img-big"></a>
                         </div>
                         <div class="show__imgs-items">
-                            <a class="show__imgs-item show__link1" href="./img/main/show-26.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-26.jpg" alt="Забор железобетонный Ажурный верх" class="show__img-mini"></a></li>
+                            <a class="show__imgs-item show__link1" href="./img/main/show-26.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-26.jpg" alt="Забор железобетонный Ажурный верх" class="show__img-mini"></a>
                             <a class="show__imgs-item show__link1" href="./img/main/show-30.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-30.jpg" alt="Забор из бетона сланец в рамке" class="show__img-mini"></a>
                             <a class="show__imgs-item show__link1" href="./img/main/show-28.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-28.jpg" alt="Забор сборный с бетонными блоками" class="show__img-mini"></a>
                             <a class="show__imgs-item show__link1" href="./img/main/show-29.jpg" data-slider="show__link1" target="_blank"><img src="./img/main/show-29.jpg" alt="Еврозабор от завода с крышкой" class="show__img-mini"></a>
@@ -607,7 +608,7 @@
                         <p class="stock__name">ЖБ Столб 2 м</p>
                         <p class="stock__desc">Армированный</p>
                         <img src="./img/main/stock-2.jpg" alt="столб ЖБ" class="stock__img">
-                        <strike class="stock__old-price">Старая цена: 19,9 руб./шт</strike>
+                        <s class="stock__old-price">Старая цена: 19,9 руб./шт</s>
                         <p class="stock__new">По акции: <span class="stock__new-price">18 руб./ шт</span></p>
                         <button class="stock__btn openform">Получить скидку</button>
                     </div>
@@ -615,7 +616,7 @@
                         <p class="stock__name">Бетонные панели</p>
                         <p class="stock__desc">Железобетонные плиты</p>
                         <img src="./img/main/stock-1.jpg" alt="Бетонные панели со сколом" class="stock__img">
-                        <strike class="stock__old-price">Старая цена: 18,3 р.шт.</strike>
+                        <s class="stock__old-price">Старая цена: 18,3 р.шт.</s>
                         <p class="stock__new">По акции: <span class="stock__new-price">16 р./шт.</span></p>
                         <button class="stock__btn openform">Получить скидку</button>
                     </div>
@@ -715,6 +716,7 @@
             </div>
         </section>
         <section class="infoback">
+            <h6 class="visually-hidden">Запрос прайса</h6>
             <div class="container">
                 <div class="infoback__box">
                     <div class="infoback__img"></div>
@@ -818,6 +820,7 @@
             </div>
         </section>
         <section class="map map_gomel">
+            <h6 class="visually-hidden">Контакты</h6>
             <div class="container">
                 <div class="map__card">
                     <div class="map__name">Радиус доставки</div>
@@ -829,17 +832,18 @@
             </div>
         </section>      
         <section class="quest quest_gomel">
+            <h6 class="visually-hidden">Калькулятор</h6>
             <div class="container">
-                <form action="./php/mail.php" method="post" class="quest__form">
+                <form action="#" class="quest__form">
                     <div class="quest__name">Остались вопросы?</div>
                     <div class="quest__desc">Введите свой вопрос и через 15 минут с Вами свяжется наш специалист</div>
                     <textarea name="message" cols="20" rows="4"  class="quest__message" placeholder="Ваш вопрос"></textarea>
-                    <input type="tel" class="quest__phone  tel" placeholder="Ваш телефон" name="phone">
+                    <input type="tel" class="quest__phone  tel _req" placeholder="Ваш телефон" name="phone">
                     <input type="hidden" name="city" value="ГОМЕЛЬ">
                     <input type="hidden" name="sort" value="Бетонный">
                     <button class="quest__btn">Задать вопрос!</button>
                     <div class="privacy">
-                        <input type="checkbox" class="quest__checkbox" name="policy" id="quest__checkbox" checked>
+                        <input type="checkbox" class="quest__checkbox _req" name="policy" id="quest__checkbox" checked>
                         <label for="quest__checkbox" class="quest__policy-label">Я согласен(а) с <a  class="quest__policy-label_link" href="/privasypolice.html" target="_blank">условиями передачи информации</a></label>
                     </div>                    
                 </form>
@@ -875,7 +879,7 @@
                             <ul class="footer__links">
                                 <li><a data-goto=".price" href="#" target="_blank" class="footer__link">Цены на заборы</a></li>
                                 <li><a data-goto=".example" href="#" target="_blank" class="footer__link">Наши работы</a></li>
-                                <li><a data-goto=".reviews" target="_blank" class="footer__link">Отзывы</a></li>
+                                <li><a data-goto=".reviews" href="#" target="_blank" class="footer__link">Отзывы</a></li>
                                 <li><a data-goto=".offer" href="#" target="_blank" class="footer__link">Контакты</a></li>
                             </ul>
                             <div class="footer__desc">Изготовление заборов любой сложности в Гомеле и Гомельской области. г. Гомель</div>
@@ -902,6 +906,7 @@
     </footer>
     <aside class="interaction">
         <section class="hat">
+            <h6 class="visually-hidden">Обратная связь</h6>
             <div class="container">
                 <div class="hat__box">
                     <div class="hat__btns">
@@ -918,32 +923,36 @@
             </div>
         </section>
         <section class="btn">
-            <button class="btn__top"><img class="btn__img" src="./img/icons/uparrow.svg" alt=""></button>
+            <h6 class="visually-hidden">На главную</h6>
+            <button class="btn__top"><img class="btn__img" src="./img/icons/uparrow.svg" alt="наверх"></button>
         </section>
         <section class="callback callback-pulse openform">
+            <h6 class="visually-hidden">Связаться</h6>
             <img src="./img/icons/callBack.png" alt="кнопка обратной связи" class="callback__img">
         </section>
         <section class="mainform">
-            <form method="post" action="./php/mail.php" class="mainform__box">
+            <h6 class="visually-hidden">Запрос прайса</h6>
+            <form action="#" class="mainform__box">
                 <h4 class="mainform__title">Заказ обратного звонка</h4>
                 <div class="mainform__desc">Оставьте заявку и наш менеджер произведет точные расчеты для Вашего забора!</div>
-                <input type="tel" class="mainform__input  tel" placeholder="Ваш телефон" name="phone">
+                <input type="tel" class="mainform__input  tel _req" placeholder="Ваш телефон" name="phone">
                 <input type="hidden" name="city" value="ГОМЕЛЬ">
                 <input type="hidden" name="sort" value="Бетонный">
                 <button class="mainform__btn">Заказать расчет</button>
                 <div class="mainform__privacy">
-                    <input type="checkbox" name="policy" class="mainform__checkbox" id="mainform__checkbox" checked>
+                    <input type="checkbox" name="policy" class="mainform__checkbox _req" id="mainform__checkbox" checked>
                     <label for="mainform__checkbox" class="mainform__policy-label">Я согласен(а) с условиями передачи информации</label>
                 </div>
-            </form>            
+            </form>                     
         </section>
         <section class="slider">
+            <h6 class="visually-hidden">Слайдер</h6>
             <img class="slider__img" src="./img/icons/logo.png" alt="show img">
             <div class="slider__prev">&#10140;</div>
             <div class="slider__next">&#10140;</div>
             <div class="slider__cross"></div>
         </section>
-        
+        <div class="sending"><div class="sending__message"></div></div>         
     </aside> 
     <script src="./js/main.js"></script>
     <script src="./js/mask.js"></script>
@@ -951,6 +960,6 @@
     <script src="./js/isdevice.js"></script>
     <script src="./js/example.js"></script>
     <script src="./js/slider.js"></script>
-    <script src="./js/submitlock.js"></script>   
+    <script src="./js/formsendler.js"></script>    
 </body>
 </html>
